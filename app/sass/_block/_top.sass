@@ -1,0 +1,98 @@
+
+.main
+	background: #fff
+	width: 360px
+	margin: 0 auto
+	font-family: $default-font
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5)
+	&__top
+		margin: 0 auto
+		background-image: url(../img/cat-mobile.png)
+		background-repeat: no-repeat
+		background-size: 100%
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		color: #fff
+		height: 512px
+		padding: 0 20px
+		margin-bottom: 20px
+		h1
+			margin-top: 40px
+			font-size: 36px
+			text-align: center
+		h3 
+			margin-top: 10px
+			font-size: 14px
+		img
+			position: absolute
+			top: 185px
+			height: 256px
+		.button
+			position: absolute
+			font-size: 14px
+			margin-left: -15px
+			
+
+@media screen and (min-width: 768px) 
+	.main
+		//padding: 0 30px
+		width: 743px
+		margin: 0 auto
+		padding: 0 1%
+		margin-top: -0px
+		&__top
+			//width: auto
+			//padding: 0 120px
+			background-image: none
+			color: #000
+			align-items: flex-start
+			height: 820px
+		h1
+			margin-top: 40px
+			text-align: left
+			font-size: 60px
+		h3
+			margin-top: 20px
+			font-size: 20px
+		img
+			top: 230px	
+			height: 580px
+		.button
+			font-size: 20px
+			width: 244px
+			height: 50px
+			text-align: center
+			top: 265px
+			margin-left: 0
+
+@media screen and (min-width: 1300px) 
+	.main
+		width: auto
+		padding: 0
+		&__top
+			margin: 0
+			padding: 0
+			padding-left: 170px
+			padding-top: 183px
+			margin-top: -173px
+			background-image: url(../img/cat-desktop.png)
+			//background-size: contain
+			background-size: 50% 100%
+			background-position: right
+			height: 500px
+			margin-bottom: 70px
+		img
+			height: 500px
+			left: 41%
+			top: 142px
+		.button
+			top: 456px
+			height: 50px
+
+@media screen and (max-width: 767px) 
+	.main__top
+		max-width: 320px
+		//background-size: 100% 50%
+		background-position: top cente

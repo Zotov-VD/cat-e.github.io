@@ -1,0 +1,64 @@
+#map 
+	height: 357px
+	width: 100%
+.map 
+	width: 100%
+	margin: 0 auto
+	height: 470px
+	line-height: 1.2
+ &__info
+ 	display: flex
+ 	align-items: center
+ 	height: 54px
+ 	width: 320px
+ 	padding: 30px 20px
+ 	background: #fff
+ 	h2
+ 		text-transform: uppercase
+ 		margin-right: 10px
+ 		width: 100%
+ 		font-size: 16px
+
+ 	p 
+ 		font-family: Arial
+ 		font-size: 14px
+
+
+@media screen and (min-width: 768px)
+	#map
+		height: 400px
+	.map 
+		height: 605px
+		&__info
+			display: flex
+			justify-content: space-between
+			width: 670px
+			height: 140px
+			align-items: center
+			h2
+				width: 160px
+				height: 70px
+				font-size: 20px
+			p
+				width: 150px
+				text-align: right
+				height: 70px
+				.sity
+					margin-top: 22px
+					display: block
+
+
+
+@media screen and (min-width: 1300px) 
+	.map
+		height: 400px
+		position: relative
+		&__info
+			position: absolute
+			z-index: 1
+			top: 50%
+			margin-top: -100px
+			margin-left: 40px
+			padding: 60px
+			width: 450px
+			height: 80px

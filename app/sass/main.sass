@@ -1,0 +1,67 @@
+@import "reset-min"
+//@import "outlines"
+@import "fonts"
+@import "vars"
+@import "_block/_header.sass"
+@import "_block/_top.sass"
+@import "_block/_categories.sass"
+@import "_block/_advantages.sass"
+@import "_block/_living_example.sass"
+@import "_block/_map.sass"
+@import "_block/_footer.sass"
+
+@import "_block/_catalog.sass"
+@import "_block/_extra-all__gift.sass"
+
+
+//@import "libs"
+body
+	font-family: $default-font
+	max-width: 1566px
+	margin: 0 auto
+	// background: black
+	color: #222
+
+.button
+	background: #68b738
+	border: none
+	height: 40px
+	top: 440px
+	color: #fff
+	width: 280px
+	cursor: pointer
+	font-family: $default-font
+	text-transform: uppercase
+	outline: none
+	transition: 0.1s ease
+	&:hover
+		background: #5eaa2f
+	&:active
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, .5) inset
+		color: #8fc176
+
+
+
+header
+	padding: 0 10%
+	box-shadow: 5px 0px 10px rgba(0, 0, 0, .5)
+	border-top: 0
+	z-index: 999
+	position: relative
+	//width: 90%
+@media screen and (min-width: 768px) 
+	header
+		padding: 0 30px
+
+@media screen and (min-width: 1300px) 
+	header
+		padding: 0 110px
+		padding-right: 20px
+		box-shadow: none
+
+@media screen and (min-width: 1310px) 
+	header
+		padding: 0 110px
+
+
+//@import "media" // Always at the end

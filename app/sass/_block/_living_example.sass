@@ -1,0 +1,261 @@
+.living_example 
+	width: 280px
+	margin: 0 auto
+	position: relative
+	display: flex	
+	flex-direction: column
+	margin-top: 20px
+	background: #f2f2f2
+	padding: 30px 40px
+	overflow: hidden
+	h2
+		font-size: 36px
+		padding-bottom: 30px
+	p
+		font-size: 14px
+		font-family: Arial
+		margin-right: 1px
+		line-height: 1.75
+
+	.example
+		display: flex
+		flex-direction: row
+		flex-wrap: nowrap
+		justify-content: space-between
+		margin-top: 27px
+		&__weight, &__times
+			width: 123px
+			height: 57px
+			border: 1px solid #cdcdcd
+			border-radius: 3px
+			display: flex
+			flex-direction: column
+			align-items: center
+			h3
+				font-size: 24px
+				margin: 0
+				margin-top: 14px
+			p 
+				font-size: 12px
+				text-align: center
+				margin-top: 10px
+				color: #555
+				background: #f2f2f2
+				padding: 0 10px
+				line-height: 1
+	h3
+		margin-top: 30px
+		text-align: center
+		font-size: 14px
+		text-transform: uppercase
+		br 
+			display: none
+	.result
+		margin-top: 40px
+		width: 280px
+		height: 240px
+		background-color: #f2f2f2
+		display: flex
+		flex-direction: column	
+		align-items: center
+
+		&__pictures
+			position: relative
+			width: 280px
+			height: 230px
+			.after
+				width: 280px
+				height: auto
+				overflow: hidden
+				position: absolute
+				z-index: 1
+				margin-left: 6px
+				background-color: #f2f2f2
+				img
+					width: 280px
+
+			.before
+				width: 280px
+				height: auto
+				position: absolute
+				overflow: hidden
+				z-index: 2
+				background-color: #f2f2f2
+				transition: 1s ease
+				img
+					width: 280px
+		&__scale
+			z-index: 4
+			display: flex
+			align-items: center
+			h5
+				text-transform: uppercase
+
+			.slide
+				width: 85px
+				height: 14px
+				border: 1px solid #cdcdcd
+				border-radius: 10px	
+				margin: 0 18px
+				.span
+					display: block
+					width: 42px
+					height: 6px
+					border-radius: 10px	
+					background: #68b738
+					margin: 4px
+					float: left
+					transition: .5s ease
+
+@media screen and (min-width: 768px) 
+	.living_example 
+		width: auto
+		background: #fff
+		padding: 40px 0
+		margin: 0 auto
+		padding-bottom: 0
+		h2
+			font-size: 60px
+		p 
+			font-size: 16px
+			margin-right: 10px
+		.example
+			margin-top: 50px
+			justify-content: flex-start
+			&__weight, &__times
+				margin-right: 40px
+				width: 160px
+				height: 73px
+				border: 1px solid #cdcdcd
+				border-radius: 3px
+				p
+					margin-right: 0
+					margin-top: 16px
+					background: #fff
+					br 
+						display: none
+				h3
+					font-size: 30px
+					margin-top: 20px
+					line-height: 1
+		h3
+			font-size: 20px
+			text-align: right
+			margin-top: -75px
+			line-height: 1.75
+			br 
+				display: inline
+		.result
+			margin: 0 auto
+			margin-top: 60px
+			width: 708px
+			height: 730px
+			position: relative
+
+			&__pictures
+				width: 708px
+				.after
+					width: 708px
+					img
+						width: 708px
+
+				.before
+					width: 52%
+					transition: 0s ease
+					img
+						width: 708px
+			&__scale
+				position: absolute
+				bottom: 100px
+				h5
+					font-size: 20px
+					padding: 5px 0
+					border-bottom: 1px dotted #ccc
+				.slide
+					width: 430px
+					height: 4px
+					border: 0
+					border-radius: 10px	
+					background: #dcdcdc
+					margin: 0 24px
+					position: relative
+					.span
+						display: block
+						width: 34px
+						height: 34px
+						border-radius: 30px	
+						border: 1px solid #cdcdcd
+						background: #fff
+						margin: 0
+						float: none
+						transition: none
+						position: absolute
+						margin-top: -15px
+						margin-left: -17px
+						left: 55%
+						z-index: 4
+						box-shadow: 0 0px 10px rgba(0,0,0,0.2)
+						&:hover
+							box-shadow: 0 3px 10px rgba(0,0,0,0.2)
+						&:active
+							border: 2px solid #68b738
+						&::after
+							content: ''
+							background: #68b738
+							width: 8px
+							height: 8px
+							border-radius: 5px	
+							position: absolute
+							top: 50%
+							left: 50%
+							margin-left: -4px
+							margin-top: -4px
+				.slider
+					width: 430px
+					height: 100px
+					// border: 1px solid #000
+					position: absolute
+					margin-left: 73px
+					border-radius: 10px	
+					z-index: 3
+
+
+
+@media screen and (min-width: 1300px) 
+	.living_example 
+		padding: 40px 40px
+		background: #f2f2f2
+		height: 600px
+		h2
+			margin-bottom: 150px
+		p 
+			width: 432px
+		.example
+			margin-top: 70px
+			&__weight, &__times
+				margin-right: 44px
+				p
+					width: auto
+		h3
+			text-align: left
+			margin-top: 50px
+			br 
+				display: none
+			span
+				margin-left: 55px
+		.result
+			margin-top: 0
+			height: 600px
+			position: absolute
+			right: 0
+			&__scale
+				position: absolute
+				bottom: 20px
+
+		
+
+
+
+
+
+

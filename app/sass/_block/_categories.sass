@@ -1,0 +1,91 @@
+.categories
+	display: flex
+	flex-direction: column
+	width: 280px
+	margin: 0 auto
+	&__slim, &__pro
+		background: #f2f2f2
+		display: flex
+		flex-direction: column
+		margin-bottom: 20px
+		padding: 20px
+		.top
+			display: flex
+			margin-bottom: 20px
+			align-items: center
+			img
+				height: 53px
+				margin-right: 20px
+			h2
+				text-transform: uppercase
+				font-size: 24px
+		p 
+			font-size: 14px
+			font-family: Arial
+			width: 230px
+			padding-bottom: 20px
+			margin-bottom: 20px
+			border-bottom: 1px solid #ccc
+			line-height: 1.65
+		h3
+			text-transform: uppercase
+			font-size: 16px
+			cursor: poin
+			&:active
+				opacity: 0.6
+	&__pro
+		.top 
+			img
+				margin-left: -7px
+				margin-right: 10px
+
+@media screen and (min-width: 768px) 
+	.categories
+		width: 708px
+		&__slim, &__pro
+			padding: 50px
+			margin-bottom: 30px
+			.top
+				display: block
+				position: relative
+				img
+					height: 190px
+					position: absolute
+					top: 0
+					right: 0
+				h2
+					font-size: 36px
+			p 
+				width: 363px
+				border: none
+				font-size: 16px
+		&__pro
+			p
+				width: 334px
+@media screen and (min-width: 1300px)
+	.categories
+		width: auto
+		flex-direction: row
+		&__slim, &__pro
+			padding: 50px
+			margin-bottom: 30px
+			margin: 0 40px	
+			width: auto
+			.top
+				display: flex
+				position: relative
+				img
+					height: 106px
+					position: static
+				h2
+					margin-left: 40px
+			p 
+				width: auto
+		&__pro
+			.top
+				h2
+					margin-left: 3px
+
+
+
+

@@ -1,0 +1,87 @@
+.advantages
+	background: #fff
+	width: 280px
+	margin: 0 auto
+	position: relative
+	margin-top: 13px
+	//background: #f34
+	h2 
+		font-size: 36px
+		margin-bottom: 25px
+	&__all
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+	&__1, &__2,&__3, &__4
+		display: flex
+		margin-bottom: 20px
+		align-items: center
+		img
+			background: #68b738
+			padding: 5px	
+			margin-right: 13px
+		p 
+			font-family: Arial
+			font-size: 14px
+			line-height: 1.4
+		.number
+			display: none
+
+@media screen and (min-width: 768px) 
+	.advantages
+		width: auto
+		border-bottom: 1px solid #f1f1f1
+		h2
+			font-size: 60px
+		&__all
+			flex-direction: row
+			flex-wrap: wrap
+			z-index: 2
+		&__1, &__2,&__3, &__4
+			flex-direction: column
+			align-items: flex-start
+			width: 354px
+			height: 360px
+			z-index: 2
+			justify-content: center
+			margin: 0
+			img
+				height: 70px
+				margin-bottom: 40px
+				z-index: 2
+			p 
+				width: 255px
+				font-size: 16px
+				line-height: 1.65
+				z-index: 2
+			.number
+				display: flex
+				z-index: 1
+				color: #f2f2f2
+				position: absolute
+				// margin: auto
+				font-size: 281px
+				width: inherit
+				height: inherit
+				align-items: center
+				justify-content: center
+
+@media screen and (min-width: 1300px) 
+	.advantages
+		width: auto
+		h2
+			font-size: 60px
+			margin-left: 40px
+		&__all
+			flex-direction: row
+			flex-wrap: nowrap
+			justify-content: space-between
+		&__1, &__2,&__3, &__4
+			width: 285px
+			height: 360px
+			margin: 0
+			margin-left: 40px
+
+
+				
+
