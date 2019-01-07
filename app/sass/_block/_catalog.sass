@@ -119,10 +119,12 @@
 /* extra end */
 
 @media screen and (min-width: 768px) 
-	h2
-		padding: 40px 27px
-		font-size: 60px
+	.catalog-h2
+		h2
+			padding: 40px 27px
+			font-size: 60px
 	.catalog
+		box-sizing: border-box
 		&__product
 			border: 0
 			margin: 24px 25px 
@@ -196,12 +198,12 @@
 
 	/* extra start */
 	.extra-h3
-		margin-left: -28px
-		margin-right: -28px
 		h3
 			padding-bottom: 60px
 			font-size: 36px
 			width: auto
+			padding-left: 0
+			padding-right: 0
 			&:after, &:before
 				content: ''
 				width: 70px
@@ -250,9 +252,14 @@
 
 	/* extra end */
 
-
-@media screen and (min-width: 1300px) 
+@media screen and (min-width: 1300px)
+	.catalog-h2
+		h2
+			padding: 40px 108px
+			font-size: 60px
 	.catalog
+		padding: 0 83px
+		box-sizing: border-box
 		&__product
 			border: 0
 			margin: 24px 25px 
@@ -282,4 +289,37 @@
 			height: 50px
 
 	/* extra start */
+	.extra-h3
+		h3
+			&:after, &:before
+				width: 110px
+			&:after
+				width: 100%
+	.extra
+		height: inherit
+		.catalog__product
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin: 0
+			padding: 0
+			height: 70px
+			.cat-wrapper
+				margin: 0
+				height: 25px
+				.statistics
+					width: 510px
+					margin-right: 40px
+					p 
+						font-size: 16px
+						display: flex
+						text-align: left
+						justify-content: space-between
+						width: 285px
+					h4
+						font-size: 20px
+		.button
+			width: 245px
+			margin: 0
+
 	/* extra end */
