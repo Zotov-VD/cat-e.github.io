@@ -1,0 +1,146 @@
+.form-p
+	font-size: 14px
+	text-transform: uppercase
+	width: 226px
+	line-height: 1.3
+	padding-left: 20px
+.form-top
+	display: flex
+	flex-direction: column
+	padding-bottom: 50px
+	&__data
+		padding: 20px
+		text-transform: uppercase
+		margin-bottom: -15px
+		.name
+			margin-bottom: 15px
+			overflow-wrap: none
+			display: flex
+			span
+				margin-right: 14px
+				white-space: nowrap
+				align-self: center
+			input
+				width: 100%
+				border: 0
+				border: 1px solid #e6e6e6
+				font-size: 16px
+				padding: 12px
+				color: #444
+	&__categ
+		box-sizing: border-box
+		padding: 20px
+		border-top: 1px solid #ededed
+		border-bottom: 1px solid #ededed
+		text-transform: uppercase
+		margin-bottom: -30px
+		padding-bottom: 0
+		.cat
+			margin-bottom: 30px
+			display: flex
+			align-items: center
+			input
+				display: none
+			label
+				display: inline-block
+				position: relative
+				margin-left: 45px
+				cursor: pointer
+				&:after, &:before
+					content: ''
+					width: 30px
+					background: #fff
+					height: 30px
+					display: block
+					position: absolute
+					border-radius: 100%
+					top: -6px
+					left: -45px
+					box-sizing: border-box
+					border: 1px solid #cecece
+				&:after
+					width: 0
+					height: 0
+					transition: none
+			input:checked + label
+				display: inline-block
+				position: relative		
+				&:after
+					background: #68b738
+					width: 12px
+					height: 12px
+					margin-top: 9px
+					margin-left: 9px
+					border: 0
+
+@media screen and (min-width: 768px)
+	.form-p
+		font-size: 20px
+		width: 350px
+		margin-left: 40px
+		margin-bottom: 40px
+	.form-top
+		margin: 0 40px
+		font-size: 20px
+		&__data
+			.name
+				input
+					font-size: 20px
+		&__categ
+			border: 1px solid #ededed
+			margin: 0 20px
+			margin-top: 40px
+			padding: 30px
+			padding-bottom: 0
+			.cat
+				label
+					margin-left: 60px
+					&:after, &:before
+						width: 40px
+						height: 40px
+						top: -10px
+						left: -60px
+				input:checked + label
+					&:after
+						width: 18px
+						height: 18px
+						margin-top: 11px
+						margin-left: 11px
+
+@media screen and (min-width: 1300px)
+	.form-p
+		width: 350px
+		margin-left: 0
+		padding-left: 108px
+		margin-top: 10px
+	.form-top
+		margin: 0 0
+		padding: 70px 108px
+		padding-top: 30px
+		flex-direction: row
+		justify-content: space-between
+		&__data
+			padding: 0
+			width: 700px
+			.name
+				input
+		&__categ
+			margin-top: 0
+			padding: 30px
+			padding-bottom: 0
+			width: 700px
+			margin-left: 80px
+			.cat
+				label
+					margin-left: 60px
+					&:after, &:before
+						width: 40px
+						height: 40px
+						top: -10px
+						left: -60px
+				input:checked + label
+					&:after
+						width: 18px
+						height: 18px
+						margin-top: 11px
+						margin-left: 11px

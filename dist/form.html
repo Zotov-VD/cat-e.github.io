@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Cat Energy</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#fff">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+	<header>
+	<div class="wrapper">
+		<div class="logo">
+			<div class="logo__img"><img src="img/logo.png" alt="logo" class="log"><img src="img/logo-2.png" alt="logo" class="log2"></div>
+			<div class="logo__name"><strong>cat</strong> energy</div>
+		</div>
+		<div class="byrger">
+			<a></a>
+			<a></a>
+			<a></a>
+		</div>
+	</div>
+	<ul class="menu">
+		<li class="margin-non"><a href="index.html" class="menu__list">главная</a></li>
+		<li><a href="catalog.html" class="menu__list">каталог продукции</a></li>
+		<li><a href="#" class="menu__list active">подбор программы</a></li>
+	</ul>
+	</header>
+
+	<!-- section start -->
+	<section class="main">
+		<div class="catalog-h2"><h2>Подбор программы</h2></div>
+		<div class="form-p"><p>заполните анкету и мы подберем программу питания для вашего кота</p></div>
+		<div class="form-top">
+			<div class="form-top__data">
+				<div class="name"><span>имя:*</span><input type="text" required maxlength="30"></div>
+				<div class="name"><span>вес (кг):*</span><input type="number" required></div>
+				<div class="name"><span>возраст (лет):</span><input type="number"></div>
+			</div>
+			<div class="form-top__categ">
+				<div class="cat slim"><input type="radio" name="categ" checked id="categ"><label for="categ">похудение</label></div>
+				<div class="cat pro"><input type="radio" name="categ" id="categ2"><label for="categ2">набор массы</label></div>
+				<div class="cat hz"><input type="radio" name="categ" id="categ3"><label for="categ3">не знаю (нужен ваш совет)</label></div>
+			</div>
+		</div>
+
+
+		<!-- map start -->
+		<div class="map">
+			<div class="map__info" style="background: #f2f2f2">
+				<h2>приглашаем<br>к сотрудничеству дилеров!</h2>
+				<p>ул. Большая Конюшенная, д. 19/8 <span class="sity">Санкт-Петербург</span></p>
+			</div>
+			<div class="map__location" id="map"></div>
+		</div>
+		<!-- map end -->
+
+	</section>
+	<!-- section end -->
+
+
+	<!-- footer start -->
+	<footer>
+		<div class="logo">
+			<div class="logo__name"><strong>cat</strong> energy</div>
+		</div>
+		<div class="soc">
+			<img src="img/soc/vk.svg" alt="">
+			<img src="img/soc/instagram.svg" alt="">
+			<img src="img/soc/facebook.svg" alt="" class="f">
+		</div>
+	</footer>
+	<!-- footer end -->
+	
+
+<!-- css for menu -->
+	<style>
+	@media screen and (min-width: 768px){ 
+		.menu__list{
+			color: #000 !important
+		}
+		.menu .active{
+			border-bottom: 3px solid #68b738
+		}
+	}
+	</style>
+	<!-- js -->
+	<script src="js/scripts.min.js"></script>
+		 <script>
+			function initMap() {
+				var uluru = {lat: -25.344, lng: 131.036};
+				var map = new google.maps.Map(
+				    document.getElementById('map'), {zoom: 4, center: uluru});
+				var marker = new google.maps.Marker({position: uluru, map: map});
+			}
+    </script>
+    <!-- async defer -->
+	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1xGaGbu706WpHCxcAIV-hwwABg-Z_d7E&callback=initMap"></script>
+
+
+</body>
+</html>
