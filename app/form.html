@@ -52,6 +52,8 @@
 	<section class="main">
 		<div class="catalog-h2"><h2>Подбор программы</h2></div>
 		<div class="form-p"><p>заполните анкету и мы подберем программу питания для вашего кота</p></div>
+
+		<!-- form-top start -->
 		<div class="form-top">
 			<div class="form-top__data">
 				<div class="name"><span>имя:*</span><input type="text" required maxlength="30"></div>
@@ -64,7 +66,52 @@
 				<div class="cat hz"><input type="radio" name="categ" id="categ3"><label for="categ3">не знаю (нужен ваш совет)</label></div>
 			</div>
 		</div>
+		<!-- form-top end -->
 
+		<div class="extra-h3 form-h3">
+			<h3>Контактные данные <br>(владельца кота)</h3>
+		</div>
+
+		<!-- form-end start -->
+		<div class="form-end">
+			<!-- contact start -->
+			<div class="form-end__contact">
+				<div class="contact"><span>e-mail:*</span><input type="email" placeholder="mail@gmail.com"></div>
+				<div class="contact"><span>телефон:*</span><input type="tel" required placeholder="+7 (960) 900 60 90"></div>
+			</div>	
+			<!-- contact end -->
+
+			<!-- comment start -->
+			<div class="extra-h3 form-h3 com-h3">
+				<h3>Комментарий</h3>
+			</div>
+			
+			<div class="form-end__comment">
+				<textarea name="comment" id="9" placeholder="РАССАЖИТЕ О ВСЕХ ПОВАДКАХ КОТА"></textarea>
+			</div>
+			<!-- comment end -->
+
+			<!-- add start -->
+			<div class="extra-h3 form-h3 com-h3">
+				<h3>Дополнительно</h3>
+			</div>
+
+			<div class="form-end__add">
+				<div class="add"><input type="checkbox" name="add1" checked id="add1"><label for="add1"><span>сахарозаменитель</span></label></div>
+				<div class="add"><input type="checkbox" name="add2" id="add2"><label for="add2"><span>питьевая вода</span></label></div>
+				<div class="add"><input type="checkbox" name="add3" id="add3"><label for="add3"><span>молоко</span></label></div>
+				<div class="add"><input type="checkbox" name="add4" id="add4"><label for="add4"><span>витамины</span></label></div>
+			</div>			
+			<!-- add end -->
+			
+			<!-- submit -->
+			<div class="form-end__submit">
+				<input type="submit" value="отправить заявку" class="button">
+				<p>* — Обязательные поля</p>
+			</div>
+
+		</div>
+		<!-- form-end end -->
 
 		<!-- map start -->
 		<div class="map">

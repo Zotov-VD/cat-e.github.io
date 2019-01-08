@@ -1,0 +1,154 @@
+.form-h3
+	h3
+		padding-top: 0
+		padding-bottom: 10px
+.form-end
+	&__comment
+		position: relative
+		box-sizing: border-box
+		width: 100%
+		padding: 20px
+		textarea
+			box-sizing: border-box
+			width: 100%
+			height: 150px
+			border: 1px solid #e6e6e6
+			font-size: 16px
+			padding: 12px
+			resize: none
+			color: #444
+			font-family: $default-font
+	&__add
+		display: flex
+		flex-direction: column
+		margin-top: 40px
+		margin-bottom: 20px
+		margin-left: 16px
+		.add
+			position: relative
+			margin-bottom: 13px
+			span
+				position: absolute
+				left: 50px
+				top: 8px
+				text-transform: uppercase
+
+	[id^=add]
+	    display: none
+
+	[id^=add] + label
+	    display: block
+	    width: 30px
+	    height: 30px
+	    border: 1px solid #cfcfcf
+	    text-align: center  
+
+	[id^=add] + label:before
+	    content: '\2713'
+	    display: inline-block
+	    color: #68b738
+	    font-size: 50px
+	    line-height: 10px
+	    transform: scale(0)
+	    transition: 0.2s
+
+	[id^=add]:checked + label:before    
+	    transform: scale(1)
+
+
+	&__submit
+		box-sizing: border-box
+		display: flex
+		flex-direction: column
+		padding: 20px
+		align-items: center
+		margin-bottom: -20px
+		input
+			width: 100%
+			font-size: 16px
+		p
+			display: block
+			font-family: Arial
+			font-size: 14px
+			margin-top: 20px
+			color: #444
+			margin-left: -18px
+
+@media screen and (min-width: 768px)
+	.form-h3
+		h3
+			padding-bottom: 30px
+			br
+				display: none
+			&:before
+				width: 108px
+	.form-end
+		.com-h3
+			margin-left: -40px
+			margin-right: -40px
+			h3
+				&:before
+					width: 30px
+		&__add
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			margin-top: 20px
+			margin-bottom: -30px
+			margin-left: 16px
+			.add
+				position: relative
+				margin-bottom: 13px
+				width: 265px
+				span
+					position: absolute
+					left: 50px
+					top: 8px
+					text-transform: uppercase	
+
+		&__submit
+			flex-direction: row
+			margin-top: 40px
+			width: 100%
+			margin-left: -4px
+			input
+				width: 282px !important
+			p
+				font-size: 16px
+				margin-left: 60px
+				margin-top: 0
+
+
+
+
+@media screen and (min-width: 1300px)
+	.form-end
+		&__contact
+			display: flex
+			flex-direction: row
+			width: 100%
+			justify-content: space-between
+			margin-left: -70px
+			padding: 40px 50px
+			.contact
+				width: 50%
+				margin-left: 80px
+		&__comment
+			padding: 40px 50px
+		.com-h3
+			h3
+				&:before
+					width: 70px
+		&__add
+			margin-left: 50px
+			margin-right: 50px
+
+		&__submit
+			margin-top: 60px
+			margin-bottom: 10px
+			margin-left: 30px
+			input
+				width: 570px !important
+			p
+				margin-left: 80px
+
